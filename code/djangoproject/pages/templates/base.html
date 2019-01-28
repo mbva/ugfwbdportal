@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+{% load static %}
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'style/main.css'  %}">
+
+    <title>{% block title %}Hello, world!{% endblock %}</title>
+  </head>
+  <body>
+{% load static %}
+        <nav1 class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand"><img src="{% static 'images/logo_Nafirri.jpg'%}" alt="Nafirri" class="rounded-circle"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+    
+  <h6> From the lab to the world: Unlocking Uganda's fresh water biodiversity data for sustainable development.</h6>&nbsp;&nbsp;&nbsp;
+  
+      
+        <button type="button" class="btn btn-success">Know us</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  
+         <button type="button" class="btn btn-success">Login</button>
+    
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav1>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Topics
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Fish</a>
+    <a class="dropdown-item" href="#">Algea</a>
+    <a class="dropdown-item" href="#">Water quality</a>
+    <a class="dropdown-item" href="#">Invertebrates</a>
+    <a class="dropdown-item" href="#">Macrophytes</a>
+  </div>
+</div>&nbsp;&nbsp;&nbsp;
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Species
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Species pages</a>
+    <a class="dropdown-item" href="#">Taxon Namelist</a>
+    <a class="dropdown-item" href="#">Species traits</a>
+    <a class="dropdown-item" href="#">Species data tables</a>
+  </div>
+</div>&nbsp;&nbsp;&nbsp;
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Contribute
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Contribute to species</a>
+    <a class="dropdown-item" href="#">Contribute to occurence</a>
+    <a class="dropdown-item" href="#">Add a dataset</a>
+    <a class="dropdown-item" href="#">Add a document</a>
+  </div>
+</div>&nbsp;&nbsp;&nbsp;
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Tools
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Publishers</a>
+    <a class="dropdown-item" href="#">Users</a>
+  </div>
+</div>&nbsp;&nbsp;&nbsp;
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Networks
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">NEMA</a>
+    <a class="dropdown-item" href="#">UWEC</a>
+    <a class="dropdown-item" href="#">NFA</a>
+  </div>
+</div>&nbsp;&nbsp;&nbsp;
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <button type="button" class="btn btn-secondary">Occurence</button>
+      </li>
+  
+    </ul>&nbsp;&nbsp;&nbsp;
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <button type="button" class="btn btn-secondary">Datasets</button>
+      </li>
+  
+    </ul>&nbsp;&nbsp;&nbsp;
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <button type="button" class="btn btn-secondary">Maps</button>
+      </li>
+  
+    </ul>&nbsp;&nbsp;&nbsp;
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <button type="button" class="btn btn-secondary">Observation</button>
+      </li>
+  
+    </ul>&nbsp;&nbsp;&nbsp;
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <button type="button" class="btn btn-secondary">Help</button>
+      </li>
+  
+    </ul>&nbsp;&nbsp;&nbsp;
+  
+  </div>
+</nav>
+<br/>
+
+
+    <div class="container">
+         {% block content %}
+
+         {% endblock %}
+
+     </div>
+
+<br/><br/>
+     <center><small>Copyright &copy; Fresh Water Biodiversity Data Portal</small></center>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  </body>
+</html>
